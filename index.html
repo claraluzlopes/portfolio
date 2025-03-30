@@ -5,35 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clara Luz | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>CLARA LUZ</h1>
-        <nav>
-            <ul>
-                <li><a href="projects">PROJECTS</a></li>
-                <li><a href="reach me">REACH ME</a></li>
-            </ul>
-        </nav>
+        <div class="top">
+            <h1 class= "logo">CLARA LUZ</h1>
+            <nav class=" menu">
+                <a href="projects">PROJECTS</a>
+                <a href="reach me">REACH ME</a>
+            </nav>
+            <div class="switch">
+                <button id="en">EN</button>
+                <button id="pt">PT</button>
+            </div>
+        </div>
+        <hr class= "underline">
     </header>
-    <P>Hello :) <br> Get to know me...</P>
-    <section>
-        <img src="img" alt="">
-        <h1>I'm Clara,</h1>
-        <p>A Software Engineering student with a strong foundation in  UX design, IT project management, and front-end development.</p>
-    </section>
-    <section>
-        <ul>
-            <li>Strong communication and teamwork skills</li>
-            <li>Detail-oriented and a lifelong learner</li>
-            <li>Proficient in Agile methodologies like Scrum</li>
-            <li>Designs following UX principles</li>
-            <li>Front-End development skills</li>
-            <li>Organized, creative, and adaptable</li>
-        </ul>
-    </section>
-    
-    
-    
+    <main>
+        <section id="section1">
+            <P>
+                Hello :) <br> Get to know me...
+            </P>
+        </section>
+        <section id="section2">
+            <div class="content">
+                <img id="me" src="assets/me.jpg" alt="me">
+                <div class="text">
+                    <h1>I'm Clara,</h1>
+                    <p>
+                        A Software Engineering student with a strong foundation in  UX design, IT project management, and front-end development.                         A Software Engineering student with a strong foundation in  UX design, IT project management, and front-end development.
+
+                    </p>
+                    <a href="resume">Download my resume</a>
+                </div>
+            </div>
+        </section id="section3">
+            <div class="skills">
+                <ul>
+                    <li>Strong communication and teamwork skills</li>
+                    <li>Detail-oriented and a lifelong learner</li>
+                    <li>Proficient in Agile methodologies like Scrum</li>
+                    <li>Designs following UX principles</li>
+                    <li>Front-End development skills</li>
+                    <li>Organized, creative, and adaptable</li>
+                </ul>
+                <p>
+                    I aspire to contribute to global projects and expand my career beyond borders.
+                </p>
+            </div>
+            <div class="aspiration">
+                
+            </div>
+            <div class="lang">
+                <p>
+                    I am a self-taught learner and have taught myself <b>three languages</b> in addition to my mother tongue:
+                </p>
+                <div class="lang-list">
+                    <ul>
+                        <li>Portuguese (native)</li>
+                        <li>English (fluent)</li>
+                        <li>French (intermediate)</li>
+                        <li> Spanish (intermediate)</li>
+                    </ul>
+                </div>
+                <img id="lang-img" src="/assets/language.png" alt="">
+            </div>
+        </section> 
+    </main>  
 </body>
 </html>
