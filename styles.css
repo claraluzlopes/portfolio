@@ -14,7 +14,7 @@ header {
 }
 
 main {
-    padding-left:10%;
+    padding-left: 10%;
     padding-right: 10%;
 }
 
@@ -106,7 +106,9 @@ hr {
     float: left;
 }
 
-/* section 1 */
+
+/* SECTION 1 AND 2 */
+
 
 #section1 {
     font-weight: 100;
@@ -117,9 +119,6 @@ hr {
 }
 
 #section2 {
-    display: block;
-    align-items: center;
-    justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
@@ -129,12 +128,12 @@ hr {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
 }
 
 #me {
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 2%;
 }
 
 .text {
@@ -146,15 +145,14 @@ hr {
 }
 
 .text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 200;
     padding-bottom: 4%;
 }
 
 .text p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 200;
-    text-align: left;
 }
 
 .text a {
@@ -165,24 +163,198 @@ hr {
     white-space: nowrap;
 }
 
+
+/* SECTION 3 */
+
+
 #section3 {
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
     max-width: 1200px;
     margin: auto;
-    text-align: center;
+    font-size: 1rem;
+}
+
+#section3 .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15%;
+    padding-top: 12%;
 }
 
 .skills {
-    text-align: left;
-    padding-top: 15%;
+    width: 50%;
+}
+
+.skills ul {
+    font-weight: 200;
+    list-style: none;
+    padding-left: 5%;
+}
+
+.skills li {
+    padding: 2%;
+    border-left: 0.1vw solid rgba(177, 97, 185, 0.445);
 }
 
 .skills p {
-    padding-left: 3%;
-    padding-top: 5%;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-weight: 200;
 }
+
+.skills span {
+    color: rgba(185, 96, 193, 1); 
+    font-weight: 500;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 5%;
+    align-self: flex-start;
+    width: 50%;
+    border: 0.1vw solid rgba(185, 96, 193, 1);
+    border-radius: 2%;
+    padding: 2%;
+
+}
+
+.lang p {
+    font-weight: 200;
+    padding-left: 25%;
+}
+
+.lang span {
+    font-weight: 600;
+}
+
+.lang ul {
+    list-style: none;
+    font-weight: 200;
+    padding-left: 5%;
+}
+
+.lang li {
+    padding: 2%;
+}
+
+.lang img {
+    width: 3.5vw;
+    height: 3.5vw;
+    position: absolute;
+    top: 0;
+    left: 50;
+    padding-top: 8%;
+    padding-left: 5%;
+}
+
+
+/* SECTION 4 */
+
+
+#projects {
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding-top: 20%;
+}
+
+
+#section4 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+.carousel-item {
+    position: relative;
+    border: 0.1vw solid rgba(177, 97, 185, 0.445);
+    border-radius: 1%;
+}
+
+.carousel-item h1 {
+    font-size: 3vw;
+    font-weight: 300;
+    padding: 3% 3%;
+    padding-bottom: 2%;
+}
+
+.carousel-item p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-left: 3%;
+    padding-right: 5%; 
+}
+
+.project-skills {
+    text-align: center;
+    padding: 5%;
+}
+
+.project-skills p {
+    border: 0.1vw solid rgba(185, 96, 193, 1);
+    border-radius: 2.5vw;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 3%;
+    font-size: 1rem;
+}
+
+.project-links a {
+    padding: 1.5%;
+    color: rgba(185, 96, 193, 1); 
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: auto;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;    
+}
+
+.carousel-controls {
+    position: absolute;
+    gap: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-controls button {
+    background-color: transparent;
+    color: rgba(255, 250, 250, 0.536);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50px; 
+    height: 50px;
+}
+
+.carousel-controls button:hover {
+    color: rgba(185, 96, 193, 1); 
+}
+
+
+
+/* MEDIA 800 */
+
 
 @media (max-width: 800px) {
     .logo {
@@ -216,8 +388,8 @@ hr {
     }
 
     #me {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     .text {
@@ -236,6 +408,112 @@ hr {
     .text a {
         font-size: 0.6rem;
     }
+
+    #section3 {
+        font-size: 0.8rem;
+    }
     
+    #projects {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item h1 {
+        font-size: 1.3rem;
+    }
+    
+    .carousel-item p {
+        font-size: 1rem;
+    }
+
+    .project-skills p {
+        font-size: 1rem;
+    }
+    
+    .project-links {
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+/* MEDIA 490 */
+
+
+@media (max-width: 490px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .menu a {
+        font-size: 0.5rem;
+    }
+
+    .menu a:first-child {
+        margin-right: 8%;
+    }
+    
+    .menu a:last-child {
+        margin-left: 10%; 
+    }
+    
+    .switch button {
+        font-size: 0.5rem;
+        padding-left: 80%;
+    }
+
+    #section1 {
+        font-size: 1.5rem;
+    }
+
+    #section2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #me {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .text {
+        padding-left: 10%;
+    }
+
+    .text h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+    }
+
+    .text a {
+        font-size: 0.4rem;
+    }
+
+    #section3 {
+        font-size: 0.6rem;
+    }
+    
+    #projects {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item h1 {
+        font-size: 1rem;
+    }
+    
+    .carousel-item p {
+        font-size: 0.8rem;
+    }
+
+    .project-skills p {
+        font-size: 0.8rem;
+    }
+    
+    .project-links {
+        font-size: 0.6rem;
+    }
 }
 
