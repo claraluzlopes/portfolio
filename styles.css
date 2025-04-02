@@ -75,6 +75,7 @@ html {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    appearance: none;
 }
 
 .switch button {
@@ -438,7 +439,7 @@ footer {
     }
     
     .menu a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .menu a:first-child {
@@ -482,11 +483,11 @@ footer {
     }
 
     .text a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     #section3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     #projects {
@@ -541,7 +542,7 @@ footer {
     }
     
     .menu a {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .menu a:first-child {
@@ -558,7 +559,7 @@ footer {
     }
 
     #section1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #section2 {
@@ -581,15 +582,15 @@ footer {
     }
 
     .text p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .text a {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 
     #section3 {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
     
     #projects {
@@ -597,11 +598,11 @@ footer {
     }
 
     .carousel-item h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .carousel-item p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .carousel-item img {
@@ -610,15 +611,15 @@ footer {
     }
 
     .project-skills p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .project-links {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .carousel-controls button {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .footer-content p:first-child {
