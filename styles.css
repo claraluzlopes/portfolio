@@ -57,7 +57,7 @@ html {
 .menu a {
     text-decoration: none;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgba(233, 233, 233, 1);
     transition: color 0.3s;
 }
@@ -79,8 +79,8 @@ html {
 
 .switch button {
     background-color: transparent;
-    color: rgba(233, 233, 233, 1);
-    cursor: pointer;
+    /*color: rgba(233, 233, 233, 1); */
+    cursor: none;
     text-align: center;
     font-size: 1rem;
     position: relative;
@@ -89,14 +89,6 @@ html {
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
-
-.switch button:hover {
-    color: rgba(185, 96, 193, 1); 
-}
-
-.switch button:active {
-    color: rgba(185, 96, 193, 1); 
 }
 
 hr {
@@ -375,9 +367,13 @@ hr {
     color: rgba(185, 96, 193, 1); 
 }
 
+
+/* FOOTER */
+
+
 footer {
     background-color: rgba(185, 96, 193, 1);
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 }
 
 .footer-content p:first-child {
@@ -414,7 +410,7 @@ footer {
 }
 
 .social-links img {
-    width: 4vw;
+    width: 3vw;
     height: auto;
     transition: transform 0.5s ease;
     display: block;
@@ -433,8 +429,6 @@ footer {
 }
 
 
-
-
 /* MEDIA 800 */
 
 
@@ -444,7 +438,7 @@ footer {
     }
     
     .menu a {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .menu a:first-child {
@@ -547,7 +541,7 @@ footer {
     }
     
     .menu a {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .menu a:first-child {
