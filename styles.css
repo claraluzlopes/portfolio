@@ -42,6 +42,7 @@ html {
     display: flex;
     gap: 30px;
     white-space: nowrap;
+    margin-right: 20%;
 }
 
 .menu a:first-child {
@@ -70,7 +71,7 @@ html {
     color:rgba(185, 96, 193, 1);
 }
 
-.switch {
+/*.switch {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -80,7 +81,7 @@ html {
 
 .switch button {
     background-color: transparent;
-    /*color: rgba(233, 233, 233, 1); */
+    /*color: rgba(233, 233, 233, 1); 
     cursor: none;
     text-align: center;
     font-size: 1rem;
@@ -90,7 +91,7 @@ html {
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
+} */
 
 hr {
     border: none;
@@ -98,7 +99,7 @@ hr {
     background-color: rgba(185, 96, 193, 1); 
     margin-top: 0;
     margin-bottom: 10px; 
-    width: 87%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     float: left;
@@ -237,7 +238,7 @@ hr {
     padding: 2%;
 }
 
-.lang img {
+.lang object {
     width: 3.5vw;
     height: 3.5vw;
     position: absolute;
@@ -489,6 +490,11 @@ footer {
     #section3 {
         font-size: 1rem;
     }
+
+    .lang object {
+        width: 4vw;
+        height: 4vw;
+    }
     
     #projects {
         font-size: 1.5rem;
@@ -570,6 +576,7 @@ footer {
     #me {
         width: 50vw;
         height: 50vw;
+        position: relative;
     }
 
     .text {
@@ -578,7 +585,6 @@ footer {
 
     .text h1 {
         font-size: 1.2rem;
-        text-align: left;
     }
 
     .text p {
@@ -591,6 +597,11 @@ footer {
 
     #section3 {
         font-size: 0.9rem;
+    }
+
+    .lang object {
+        width: 4vw;
+        height: 4vw;
     }
     
     #projects {
