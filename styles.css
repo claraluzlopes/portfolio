@@ -559,7 +559,8 @@ footer {
     }
 
     .social-links img {
-        width: 4vw;
+        width: 2rem;
+        image-rendering: auto;
     }
     
 }
@@ -577,16 +578,8 @@ footer {
     }
 
     .menu a:first-child {
-        margin-right: 8%;
-    }
-    
-    .menu a:last-child {
-        margin-left: 10%; 
-    }
-    
-    .switch button {
-        font-size: 0.5rem;
-        padding-left: 80%;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 
     #section1 {
@@ -647,11 +640,12 @@ footer {
     }
 
     .social-links {
-        margin-bottom: -1rem;
+        margin-right: -1rem;
     }
 
     .social-links img {
-        width: 5vw;
+        width: 2rem;
+        image-rendering: auto;
     }
 
     #credits {
@@ -659,3 +653,10 @@ footer {
     }
 }
 
+@media (hover: none) and (pointer: coarse) {
+    a:hover,
+    img:hover,
+    button:hover {
+    all: unset;
+    }
+}  
