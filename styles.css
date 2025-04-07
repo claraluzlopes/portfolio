@@ -8,6 +8,7 @@ body {
     color: rgba(233, 233, 233, 1);
     font-family: 'montserrat', sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 header {
@@ -580,6 +581,7 @@ footer {
 
     .menu a:first-child {
         margin-left: 10%;
+        margin-right: 2%;
     }
 
     #section1 {
@@ -595,6 +597,10 @@ footer {
         width: 40vw;
         height: auto;
         position: relative;
+    }
+
+    .lang {
+        width: 90%;
     }
 
     .lang object {
