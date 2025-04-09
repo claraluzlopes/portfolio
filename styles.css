@@ -25,12 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#google_translate_element {
-    white-space: normal !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
-
 
 .top {
     display: flex;
@@ -443,7 +437,7 @@ footer {
 /* MEDIA 700 */
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .logo {
         font-size: 1.6rem;
     }
