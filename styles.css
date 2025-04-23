@@ -23,7 +23,7 @@ main {
 
 html {
     scroll-behavior: smooth;
-}
+} 
 
 
 .top {
@@ -36,7 +36,7 @@ html {
 
 .logo {
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     white-space: nowrap;
 
 }
@@ -70,9 +70,7 @@ html {
     color:rgba(185, 96, 193, 1);
 }
 
-.menu a:active {
-    color:rgba(185, 96, 193, 1);
-}
+
 
 /*.switch {
     display: flex;
@@ -115,9 +113,10 @@ hr {
 #section1 {
     font-weight: 100;
     font-size: 3rem;
-    padding-top: 10%;
-    padding-bottom: 15%;
+    padding-top: 13%;
+    padding-bottom: 18%;
     max-width: 1200px;
+    line-height: 1.6;
 }
 
 #section2 {
@@ -133,8 +132,8 @@ hr {
 }
 
 #me {
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 2%;
 }
 
@@ -144,22 +143,23 @@ hr {
     justify-content: space-between;
     padding-left: 10%;
     text-align: left;
+    font-weight: 200;
 }
 
 .text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;
     padding-bottom: 4%;
 }
 
 .text p {
-    font-size: 1.3rem;
-    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 2;
+
 }
 
 .text a {
-    font-size: 0.9rem;
-    font-weight: 200;
+    font-size: 0.8rem;
     color: rgba(233, 233, 233, 1);
     padding-top: 5%;
     white-space: nowrap;
@@ -216,7 +216,7 @@ hr {
     padding-top: 5%;
     align-self: flex-start;
     width: 50%;
-    border: 0.1vw solid rgba(185, 96, 193, 1);
+    border: 0.1vw solid rgba(177, 97, 185, 0.445);
     border-radius: 2%;
     padding: 2%;
 
@@ -225,6 +225,7 @@ hr {
 .lang p {
     font-weight: 200;
     padding-left: 25%;
+    line-height: 1.6;
 }
 
 .lang span {
@@ -261,116 +262,226 @@ hr {
     padding-top: 20%;
 }
 
+#section4 {
+    margin: auto;
+    padding-top: 90px;
+    max-width: 1000px;
+    min-height: 50vh;
+}
 
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3vw;
+}
+
+.carousel-item {
+    border-radius: 15px;
+    background-color: rgba(185, 96, 193, 0.32);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(185, 96, 193, 0.585);
+}
+
+.carousel-item h1 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 3% 3% 2% 3%;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+/* 
+.folder {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+*/
+
+.project-skills {
+    text-align: center;
+    width: 94%;
+    margin-top: auto;
+    padding-top: 3%;
+}
+
+.project-skills p {
+    border-bottom: 0.1vw solid rgba(177, 97, 185, 0.445);
+    padding: 3%;
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: 300;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.project-links img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+/* 
 #section4 {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     padding-top: 10%;
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden; 
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
 }
 
 .carousel-item {
+    scroll-snap-align: start;
     position: relative;
-    border: 0.1vw solid rgba(177, 97, 185, 0.445);
-    border-radius: 1%;
+    border-radius: 2vw;
+    background-color: rgba(185, 96, 193, 0.32);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 2%;
+    padding: 5%;
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-item h1 {
     font-size: 3vw;
-    font-weight: 300;
-    padding: 3% 3%;
-    padding-bottom: 2%;
+    font-weight: 200;
+    padding: 3% 3% 2% 3%;
 }
 
 .carousel-item p {
     font-size: 1.2rem;
     font-weight: 200;
     padding-left: 3%;
-    width: 40%;
+    padding-top: 2%;
+}
 
+.folder {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+    padding-left: 2%;
+    padding-top: 2%;
 }
 
 .project-skills {
     text-align: center;
-    padding: 5%;
-    width: 100%;
+    width: 94%;
     margin-top: auto;
+    padding-top: 3%;
 }
 
 .project-skills p {
     border: 0.1vw solid rgba(185, 96, 193, 1);
-    border-radius: 2.5vw;
-    padding: 1%;
-    font-size: 1.2rem;
+    border-radius: 3vw;
+    padding: 3%;
+    font-size: 1rem;
     width: 100%;
+    font-weight: 300;
 }
 
 .project-links {
     display: flex;
     flex-direction: column;
-    padding: 3%;
-    align-items: flex-end;
-    font-size: 1rem;
-    position: absolute; 
-	top: 60%;
-    right: 0;
-    white-space: nowrap;
-}
-
-.project-links a {
-    padding: 6%;
-    color: rgba(185, 96, 193, 1); 
-}
-
-.project-links a:hover {
-    color: rgb(243, 116, 255); 
-}
-
-.carousel-item img {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    height: auto;
-    padding: 3%;
-    border-radius: 1.6rem;
-    width: 50%;
-}
-
-.carousel-container {
+    top: 1rem;
+    right: 1rem;
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;    
+    gap: 1rem;
 }
 
-.carousel-controls {
+.project-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.project-links img:hover {
+    transform: scale(1.1); 
+}
+
+.arrow {
     position: absolute;
-    gap: 80vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel-controls button {
-    background-color: transparent;
-    color: rgba(255, 250, 250, 0.536);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(85, 0, 86, 0.106);
     border: none;
+    color: white;
     font-size: 2rem;
     cursor: pointer;
-    transition: 0.3s;
-    width: 50px; 
-    height: 50px;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
-.carousel-controls button:hover {
-    color: rgba(185, 96, 193, 1); 
+.arrow:hover {
+background-color: rgba(72, 4, 67, 0.226);
 }
+
+.arrow.left {
+left: 0.5rem;
+}
+
+.arrow.right {
+right: 0.5rem;
+}
+*/
+
+
 
 
 /* FOOTER */
@@ -409,7 +520,7 @@ footer {
 .social-links {
     display: flex;
     justify-content: flex-end; 
-    gap: 1.2rem; 
+    gap: 1rem; 
     padding-right: 2rem; 
     margin-bottom: -1.5rem;
 }
@@ -425,6 +536,12 @@ footer {
     transform: scale(1.3); 
 }
 
+.social-links a:nth-child(1) img,
+.social-links a:nth-child(2) img {
+    width: 3.5vw;  
+    height: 4vw; 
+}
+
 #credits {
     padding-left: 2%;
     padding-bottom: 1%;
@@ -434,7 +551,7 @@ footer {
 }
 
 
-/* MEDIA 700 */
+/* MEDIA 800 */
 
 
 @media (max-width: 800px) {
@@ -526,6 +643,11 @@ footer {
     
     #projects {
         font-size: 1.5rem;
+        padding-top: 40%;
+    }
+
+    .carousel {
+        grid-template-columns: 1fr;
     }
 
     .carousel-item h1 {
@@ -536,21 +658,13 @@ footer {
         font-size: 1rem;
     }
 
-    .carousel-item img {
-        width: 40vw;
-        height: auto;
+    .project-links img {
+        width: 20px;
+        height: 20px;
     }
 
     .project-skills p {
-        font-size: 1rem;
-    }
-    
-    .project-links {
         font-size: 0.8rem;
-    }
-
-    .carousel-controls button {
-        font-size: 1.5rem;
     }
 
     .footer-content p:first-child {
@@ -559,11 +673,6 @@ footer {
 
     #email a {
         font-size: 1rem;
-    }
-
-    .social-links img {
-        width: 2rem;
-        image-rendering: auto;
     }
     
 }
@@ -615,27 +724,20 @@ footer {
 
     .carousel-item h1 {
         font-size: 1.2rem;
+        margin-top: 5%;
     }
     
     .carousel-item p {
         font-size: 1rem;
     }
 
-    .carousel-item img {
-        width: 45vw;
-        height: auto;
-    }
-
     .project-skills p {
-        font-size: 0.9rem;
-    }
-    
-    .project-links {
         font-size: 0.7rem;
     }
 
-    .carousel-controls button {
-        font-size: 1.3rem;
+    .project-links img {
+        width: 20px;
+        height: 20px;
     }
 
     .footer-content p:first-child {
@@ -648,11 +750,7 @@ footer {
 
     .social-links {
         margin-right: -1rem;
-    }
-
-    .social-links img {
-        width: 1.5rem;
-        image-rendering: auto;
+        gap: 0.5rem;
     }
 
     #credits {

@@ -7,14 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel="icon" type="image/svg" href="assets/FAVICON.svg">
         
 </head>
 <body>
-    <div id="google_translate_element"></div>
     <header>
         <div class="top">
             <h1 class= "logo" translate="no">CLARA LUZ</h1>
@@ -22,19 +18,17 @@
                 <a href="#section4">PROJECTS</a>
                 <a href="#footer">REACH ME</a>
             </nav>
-            <!-- <div class="switch">
-                <button id="en"></button>
-                <button id="pt"></button>
-            </div> -->
         </div>
         <hr class= "underline">
     </header>
+
     <main>
         <section id="section1">
             <P>
                 Hello <span translate="no"> :)</span> <br> Get to know me...
             </P>
         </section>
+
         <section id="section2">
             <div class="content">
                 <img id="me" src="assets/me.jpg" alt="me">
@@ -47,6 +41,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section3">
             <div class="content">
                 <div class="skills">
@@ -76,35 +71,78 @@
                 </div>
             </div>
         </section>
+
         <h1 id="projects">PROJECTS</h1>
+
         <section id="section4">
+
             <div class="carousel-container">
                 <div class="carousel">
-                    <p>WORK IN PROGRESS</p>
-                    <!--<div class="carousel-item">
-                        <h1 translate="no">SeuInvestimento</h1>
-                        <p>
-                            SeuInvestimento is a user-centric investment management platform that simplifies portfolio analysis, asset monitoring, and investment decision-making. <br> Experienced in software documentation and process management, specializing in gathering requirements, coordinating team efforts, and ensuring efficient task execution. 
-                        </p>
-                        <div class="project-skills">
+
+                    <div class="carousel-item" id="first">
+                        <!-- <img src="assets/folder.svg" alt="folder" class="folder"> -->
+                                <h1 translate="no">SeuInvestimento</h1>
+                            <div class="project-links">
+                                <a href="https://github.com/YuriiSouza/seuinvestimento_frontend" target="_blank">
+                                    <img src="assets/github 1.svg" alt="GitHub">
+                                </a>
+                            </div>
                             <p>
-                                Team work • project management • HTML • CSS • JavaScript • UX design
+                                First group project developed at Universidade Evangelica de Goias, I was mostly responsible for the front-end development, design and project organization.
                             </p>
-                        </div>
-                        <div class="project-links">
-                            <a href="" target="_blank">Figma design </a>
-                            <a href="" target="_blank">GitHub repository</a>
-                        </div>
-                        <img src="/assets/seuinvestimento.svg" alt="">
-                    </div> -->
-                </div>
-                <div class="carousel-controls">
-                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="project-skills">
+                                <p>
+                                    JavaScript • Angular • CSS • UX design
+                                </p>
+                            </div>
+                    </div> 
+
+                    <div class="carousel-item" id="second">
+                        <!-- <img src="assets/folder.svg" alt="folder" class="folder"> -->
+                                <h1 translate="no">Pongo Pet</h1>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/JP4oYX9Ajgtwaxpk7x1jTv/desafio2_FTT?page-id=0%3A1&node-id=2-11&p=f&viewport=62%2C237%2C0.2&t=UIK4WtlW4z6zKEBQ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A11" target="_blank">
+                                    <img src="assets/figma.svg" alt="figma">    
+                                </a>
+                            </div>
+                            <p>
+                                Mobile interface design for a local petshop.
+                            </p>
+                            <div class="project-skills">
+                                <p>
+                                    Figma • UX design
+                                </p>
+                            </div>
+                    </div> 
+
+                    <div class="carousel-item" id="third">
+                        <!-- <img src="assets/folder.svg" alt="folder" class="folder"> -->
+                                <h1 translate="no">CSV Filter</h1>
+                            <div class="project-links">
+                                <a href="https://github.com/claraluzlopes/CSV-filter" target="_blank">
+                                    <img src="assets/github 1.svg" alt="GitHub">
+                                </a>
+                            </div>
+                            <p>
+                                This application made with flask, gets a CSV file and returns a filtered PDF
+                            </p>
+                            <div class="project-skills">
+                                <p>
+                                    Python • Flask • Pandas • HTML • CSS
+                                </p>
+                            </div>
+                    </div> 
+
                 </div>
             </div>
+
+            <!-- 
+            <button class="arrow left" onclick="document.querySelector('.carousel').scrollBy({ left: -500, behavior: 'smooth' })">&#8592;</button>
+            <button class="arrow right" onclick="document.querySelector('.carousel').scrollBy({ left: 500, behavior: 'smooth' })">&#8594;</button>
+            -->
         </section>
     </main>  
+
     <footer id="footer">
         <div class="footer-content">
             <p>I'd love to talk!</p>
@@ -126,5 +164,6 @@
             <p id="credits" translate="no">Designed and developed by Clara Luz</p>
         </div>
     </footer>
+
 </body>
 </html>
