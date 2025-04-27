@@ -67,14 +67,16 @@
 
     .skills {
         width: 100%;
-        padding-bottom: 15%;
+        margin-bottom: 15%;
     }
 
     .lang {
-        width: 80%;
         align-self: center;
+        width: 50%;
     }
 
+
+    /*
     .skills ul,
     .skills p,
     .lang ul {
@@ -88,6 +90,7 @@
         left: 0;
         padding-left: 8%;
     }
+    */
     
     #projects {
         font-size: 1.5rem;
@@ -158,7 +161,8 @@
     }
 
     .lang {
-        width: 90%;
+        width: 50%;
+        margin-top: 10%;
     }
 
     .lang object {
