@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clara Luz | Portfolio</title>
+    <title>Clara Luz</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/svg" href="assets/FAVICON.svg">
-        
+    <script defer src="script.js"></script>
+
 </head>
 <body>
     <header>
         <div class="top">
-            <h1 class= "logo" translate="no">CLARA LUZ</h1>
+            <h1 class= "logo">CLARA LUZ</h1>
             <nav class=" menu">
                 <a href="#section4">PROJECTS</a>
                 <a href="#footer">REACH ME</a>
@@ -23,13 +24,14 @@
     </header>
 
     <main>
-        <section id="section1">
-            <P>
-                Hello <span translate="no"> :)</span> <br> Get to know me...
+        <section id="section1" class="hidden">
+            <P id="typewriter">
+                <span id="line1"></span><br>
+                <span id="line2"></span>
             </P>
         </section>
 
-        <section id="section2">
+        <section id="section2" class="hidden">
             <div class="content">
                 <img id="me" src="assets/me.jpg" alt="me">
                 <div class="text">
@@ -42,7 +44,7 @@
             </div>
         </section>
 
-        <section id="section3">
+        <section id="section3" class="hidden">
             <div class="content">
                 <div class="skills">
                     <ul>
@@ -72,9 +74,11 @@
             </div>
         </section>
 
-        <h1 id="projects">PROJECTS</h1>
 
-        <section id="section4">
+        <section id="section4" class="hidden">
+
+            <h1 id="projects" class="hidden">PROJECTS</h1>
+
 
             <div class="carousel-container">
                 <div class="carousel">
@@ -136,10 +140,6 @@
                 </div>
             </div>
 
-            <!-- 
-            <button class="arrow left" onclick="document.querySelector('.carousel').scrollBy({ left: -500, behavior: 'smooth' })">&#8592;</button>
-            <button class="arrow right" onclick="document.querySelector('.carousel').scrollBy({ left: 500, behavior: 'smooth' })">&#8594;</button>
-            -->
         </section>
     </main>  
 

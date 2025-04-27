@@ -9,6 +9,7 @@ body {
     font-family: 'montserrat', sans-serif;
     overflow-x: hidden;
     max-width: 100%;
+    cursor: default;
 }
 
 header {
@@ -24,6 +25,11 @@ main {
 html {
     scroll-behavior: smooth;
 } 
+
+html, body {
+    overflow-x: hidden; 
+}
+
 
 
 .top {
@@ -257,16 +263,20 @@ hr {
 
 
 #projects {
-    font-size: 1.8rem;
-    font-weight: 200;
-    padding-top: 20%;
+    font-size: 1.6rem;
+    font-weight: 100;
+    border-left: 0.1vw solid rgba(177, 97, 185, 0.445);
+    margin-bottom: 15%;
+    margin-left: 2%;
+    padding-left: 1%;
 }
+
 
 #section4 {
     margin: auto;
-    padding-top: 90px;
     max-width: 1000px;
     min-height: 50vh;
+    margin-top: 25%;
 }
 
 .carousel {
@@ -305,18 +315,6 @@ hr {
     padding-top: 2%;
 }
 
-/* 
-.folder {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 50px;
-    height: 50px;
-    padding-left: 2%;
-    padding-top: 2%;
-}
-*/
-
 .project-skills {
     text-align: center;
     width: 94%;
@@ -351,136 +349,6 @@ hr {
 .project-links img:hover {
     transform: scale(1.1); 
 }
-
-
-
-/* 
-#section4 {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10%;
-    position: relative;
-}
-
-.carousel-container {
-    overflow: hidden; 
-    width: 100%;
-}
-
-.carousel {
-    display: flex;
-    flex-wrap: nowrap; 
-    gap: 2rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    padding-bottom: 1rem;
-}
-
-.carousel-item {
-    scroll-snap-align: start;
-    position: relative;
-    border-radius: 2vw;
-    background-color: rgba(185, 96, 193, 0.32);
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    min-width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-item h1 {
-    font-size: 3vw;
-    font-weight: 200;
-    padding: 3% 3% 2% 3%;
-}
-
-.carousel-item p {
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding-left: 3%;
-    padding-top: 2%;
-}
-
-.folder {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 50px;
-    height: 50px;
-    padding-left: 2%;
-    padding-top: 2%;
-}
-
-.project-skills {
-    text-align: center;
-    width: 94%;
-    margin-top: auto;
-    padding-top: 3%;
-}
-
-.project-skills p {
-    border: 0.1vw solid rgba(185, 96, 193, 1);
-    border-radius: 3vw;
-    padding: 3%;
-    font-size: 1rem;
-    width: 100%;
-    font-weight: 300;
-}
-
-.project-links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.project-links img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.5s ease;
-}
-
-.project-links img:hover {
-    transform: scale(1.1); 
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(85, 0, 86, 0.106);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.arrow:hover {
-background-color: rgba(72, 4, 67, 0.226);
-}
-
-.arrow.left {
-left: 0.5rem;
-}
-
-.arrow.right {
-right: 0.5rem;
-}
-*/
-
 
 
 
@@ -643,7 +511,7 @@ footer {
     
     #projects {
         font-size: 1.5rem;
-        padding-top: 40%;
+        margin-top: 30%;
     }
 
     .carousel {
@@ -767,3 +635,59 @@ footer {
         filter: none !important;
         }
 }  
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out
+}
+
+.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+
+.skills ul li {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+.skills ul li.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-item {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+}
+
+.carousel-item.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+#typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1.2px;
+    height: 0.9em;
+    border-radius: 3vw;
+    background-color: rgba(233, 233, 233, 1);
+    animation: blink 1.2s infinite;
+    margin-left: 4px;
+    vertical-align: -10%;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
