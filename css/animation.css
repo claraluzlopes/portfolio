@@ -1,0 +1,56 @@
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out
+}
+
+.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+
+.skills ul li {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+.skills ul li.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-item {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+}
+
+.carousel-item.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+#typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1.2px;
+    height: 0.9em;
+    border-radius: 3vw;
+    background-color: rgba(233, 233, 233, 1);
+    animation: blink 1.2s infinite;
+    margin-left: 4px;
+    vertical-align: -10%;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
