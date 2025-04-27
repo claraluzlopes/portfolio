@@ -194,8 +194,6 @@ hr {
     font-weight: 500;
 }
 
-
-
 .lang {
     display: flex;
     flex-direction: column;
@@ -204,7 +202,7 @@ hr {
     border: 0.1vw solid rgba(177, 97, 185, 0.445);
     border-radius: 1vw;
     padding: 5%;
-    width: 40%;
+    width: 50%;
     align-self: flex-start;
     align-items: center;
     gap: 2rem;
