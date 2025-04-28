@@ -209,12 +209,12 @@
     }
 
     .social-links img {
-        width: 6vw;
+        width: 8vw;
     }
     
     .social-links a:nth-child(1) img,
     .social-links a:nth-child(2) img {
-        width: 5vw;
+        width: 7vw;
     }
 
     #credits {
