@@ -225,7 +225,8 @@
 @media (hover: none) and (pointer: coarse) {
     a:hover,
     img:hover,
-    button:hover {
+    button:hover,
+    div:hover {
         opacity: 1 !important;
         transform: none !important;
         filter: none !important;

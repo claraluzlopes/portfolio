@@ -103,8 +103,11 @@ hr {
     line-height: 1.6;
 }
 
+#typewriter {
+    height: 3em;
+}
+
 #section2 {
-    padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
